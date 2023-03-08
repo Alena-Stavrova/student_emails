@@ -1,0 +1,16 @@
+Creating a table:
+
+CREATE TABLE students (student_id int, first_name varchar(20), last_name varchar(20), school int);
+INSERT INTO students VALUES (1, 'Ivan', 'Ivanov', 220);
+INSERT INTO students VALUES (2, 'petr', 'petrov', 108);
+INSERT INTO students VALUES (3, 'elena', 'lenina', 80);
+INSERT INTO students VALUES (4, 'MIKHAIL', 'MIKHAILOV', 37);
+INSERT INTO students VALUES (5, 'Olga', 'olgina', 251);
+
+
+Problem: 
+Return the list of emails for students studying in schools with two-digit numbers.
+The emails should contain the first name and the last name of the student (separated by dot), "at" sign and the website of the school (the word "school", the number of the school and ".ru").
+
+Solution (MySQL):
+SELECT CONCAT(LOWER(first_name), ".", LOWER(last_name), "@school", school, ".ru") AS student_email FROM students WHERE school <= 99;
