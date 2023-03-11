@@ -2,7 +2,7 @@ Problem:
 Return the list of emails for students studying in schools with two-digit numbers.
 The emails should contain the first name and the last name of the student (separated by dot), "at" sign and the website of the school (the word "school", the number of the school and ".ru").
 
-SQL Fiddle: http://sqlfiddle.com/#!9/a6c585/1
+SQL Fiddle: http://sqlfiddle.com/#!9/018bfed
 (Scroll down to see the solution)
 
 
